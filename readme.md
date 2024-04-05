@@ -1,14 +1,16 @@
 
-# [:] Example Android Project
+# [:] Example Android Project.
 
-An example Android project to demonstrate [SourceClear](https://www.sourceclear.com) scans.
+An example Android project to demonstrate [SourceClear](https://www.sourceclear.com) scans.s
 
 ## Try me!
+
+Start by [installing the agent](https://www.sourceclear.com/docs/command-line-interface/).
 
 Clone this project:
 
 ```sh
-git@github.com:srcclr/example-java-gradle-android.git
+git clone git@github.com:srcclr/example-java-gradle-android.git
 cd example-java-gradle-android
 ```
 
@@ -18,8 +20,12 @@ Specify the location of the Android SDK in `local.properties`:
 echo 'sdk.dir=/path/to/Android/sdk' > local.properties
 ```
 
-[Specify your API token](https://www.sourceclear.com/docs/gradle-plugin/), then invoke the plugin:
+Kick off a scan:
 
 ```sh
-./gradlew srcclr
+srcclr scan
 ```
+
+## Using the [Gradle plugin](https://plugins.gradle.org/plugin/com.srcclr.gradle)
+
+Check out this [branch](https://github.com/srcclr/example-java-gradle-android/tree/plugin).
